@@ -86,11 +86,11 @@ const TaffyTool = () => {
             onBlur={e => handleInputBlur(e.target.value)}
             value={toolPxWidth}
             autoComplete="off"
-            maxLength="5"
+            type="number"
             style={{
               fontSize: '0.75rem',
               height: '1.375rem',
-              width: '3.125rem'
+              width: '3.5rem'
             }}
           />
           <label htmlFor="px-input" style={{
@@ -106,11 +106,11 @@ const TaffyTool = () => {
             onBlur={e => handleInputBlur(getPxFromEm(e.target.value))}
             value={getEmFromPx(toolPxWidth)}
             autoComplete="off"
-            maxLength="5"
+            type="number"
             style={{
               fontSize: '0.75rem',
               height: '1.375rem',
-              width: '3.125rem'
+              width: '3.5rem'
             }}
           />
           <label htmlFor="em-input" style={{

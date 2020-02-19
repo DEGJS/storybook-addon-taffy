@@ -21,9 +21,9 @@ const TaffyWrapper = ({ children }) => {
   useLayoutEffect(() => {
     isMounted = true;
     if (wrapperEl) {
-      const maxWidth = wrapperEl.current.getBoundingClientRect().toJSON().width;
+      const maxWidth = wrapperEl.current.getBoundingClientRect().width;
       channel.emit(wrapperMaxWidthChangeEvent, maxWidth);
-      setWrapperWidth(wrapperEl.current.getBoundingClientRect().toJSON().width);
+      setWrapperWidth(maxWidth);
     }
     channel.on(toolWidthChangeEvent, handleToolWidthChange);
     channel.emit(wrapperWidthChangeEvent, wrapperWidth);
@@ -98,7 +98,7 @@ const TaffyWrapper = ({ children }) => {
 };
 
 export const withTaffy = makeDecorator({
-  name: 'withSitecoreProps',
+  name: 'withTaffy',
   allowDeprecatedUsage: false,
   wrapper: (getStory, context) => {
     const story = getStory(context);

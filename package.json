@@ -1,6 +1,6 @@
 {
   "name": "@degjs/storybook-addon-taffy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A responsive viewport addon for Storybook",
   "main": "dist/index.js",
   "repository": {
@@ -23,7 +23,9 @@
   },
   "homepage": "https://github.com/DEGJS/storybook-addon-taffy#readme",
   "files": [
-    "dist"
+    "dist/**/*",
+    "README.md",
+    "*.js"
   ],
   "scripts": {
     "compile": "rimraf dist/* && babel src -d dist",

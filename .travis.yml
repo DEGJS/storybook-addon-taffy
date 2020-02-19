@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- node
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: npm
+  email: aladage@gmail.com
+  on:
+    branch: master
+    tags: true
+    repo: DEGJS/storybook-addon-taffy

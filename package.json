@@ -1,6 +1,6 @@
 {
   "name": "@degjs/storybook-addon-taffy",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A responsive viewport addon for Storybook",
   "main": "dist/index.js",
   "repository": {

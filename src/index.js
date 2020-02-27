@@ -20,7 +20,7 @@ const TaffyWrapper = ({ children }) => {
   const [wrapperWidth, setWrapperWidth] = useState('100%');
   useLayoutEffect(() => {
     isMounted = true;
-    if (wrapperEl) {
+    if (wrapperEl && wrapperEl.current) {
       const maxWidth = wrapperEl.current.getBoundingClientRect().width;
       channel.emit(wrapperMaxWidthChangeEvent, maxWidth);
       setWrapperWidth(maxWidth);

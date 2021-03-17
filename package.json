@@ -11,7 +11,9 @@
     "storybook",
     "responsive",
     "taffy",
-    "addon"
+    "addon",
+    "storybook-addon",
+    "style"
   ],
   "author": {
     "name": "Aaron Ladage",
@@ -50,5 +52,8 @@
       "@babel/preset-env",
       "@babel/preset-react"
     ]
+  },
+  "storybook": {
+    "displayName": "Taffy responsive viewports"
   }
 }
